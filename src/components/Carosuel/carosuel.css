@@ -1,4 +1,7 @@
 .carosuel {
-  height: 95vh !important;
-  background-color: black;
+  height: 50vh !important;
+}
+
+.img {
+  height: 90vh;
 }

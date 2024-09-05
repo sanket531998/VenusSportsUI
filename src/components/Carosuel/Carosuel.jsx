@@ -1,3 +1,8 @@
+import "./carosuel.css";
+import image1 from "./../../assets/images.jpeg";
+import image2 from "./../../assets/paris.jpg";
+import image3 from "./../../assets/images.jpeg";
+
 const Carosuel = () => {
   return (
     <div className="carosuel">
@@ -26,11 +31,7 @@ const Carosuel = () => {
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img
-              src="./../../assets/images.jpeg"
-              class="d-block w-100"
-              alt="..."
-            />
+            <img src={image1} class="d-block w-100 img" alt="..." />
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>
@@ -39,7 +40,7 @@ const Carosuel = () => {
             </div>
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="..." />
+            <img src={image2} class="d-block w-100 img" alt="..." />
             <div class="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>
@@ -48,7 +49,7 @@ const Carosuel = () => {
             </div>
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="..." />
+            <img src={image3} class="d-block w-100 img" alt="..." />
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>
