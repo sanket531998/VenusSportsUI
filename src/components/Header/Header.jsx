@@ -1,59 +1,50 @@
-import React, { useState } from "react";
-import "./header.css"; // Import the CSS file
+import "./header.css";
+import venusLogo from "../../assets/venuslogo.png";
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  // const toggleMenu = () => {
+  //   setIsMenuOpen(!isMenuOpen);
+  // };
 
   return (
-    <header className="header">
-      <div className="logo">
-        <h1>Venus Sports</h1>
+    <navbar>
+      <div className="bg-slate-200 text-2xl h-12 flex justify-center items-center text-gray-400">
+        <span>Venus Sports Association</span>
       </div>
-      <nav className={`nav ${isMenuOpen ? "active" : ""}`}>
-        <ul className="nav-list">
-          <li className="nav-item">Home</li>
-          <li className="nav-item">Features</li>
-          <li className="nav-item">Pricing</li>
-          <li className="nav-item">FAQs</li>
-          <li className="nav-item">About</li>
+
+      <div className="bg-white flex flex-row border-b  border-slate-300 justify-between items-center  cursor-pointer select-none px-4 shadow-lg  w-full h-12">
+        <div>
+          <img
+            // src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxUBq0UUE7M-2p26qp91KIKMHJw2s8XPI7iQ&s"
+            src={venusLogo}
+            className="h-11 rounded m-2"
+            alt="logo-venus"
+          ></img>
+        </div>
+        <ul className="md:flex flex-row hidden">
+          <li className="px-3 font-semibold">Home</li>
+          <li className="px-3 font-semibold">Volleyball</li>
+          <li className="px-3 font-semibold">Summer Camp</li>
+          <li className="px-3 font-semibold">Gallery</li>
+          <li className="px-3 font-semibold">Team</li>
+          <li className="px-3 font-semibold">Contact us</li>
         </ul>
-      </nav>
-
-      <div className="menu-toggle" onClick={toggleMenu}>
-        <div class="dropdown">
-          <span
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            ☰
-          </span>
-
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="#">
-                Action
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">
-                Another action
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">
-                Something else here
-              </a>
-            </li>
-          </ul>
+        <div>
+          <p className="font-semibold text-lg md:block hidden bg-blue-300 px-4 py-1 rounded text-white">
+            Register
+          </p>
+        </div>
+        <div className="md:hidden cursor-pointer">
+          <div class="hamburger">
+            <div className="bg-slate-500 h-1 w-6 my-1"></div>
+            <div className="bg-slate-500 h-1 w-6 my-1"></div>
+            <div className="bg-slate-500 h-1 w-6 my-1"></div>
+          </div>
         </div>
       </div>
-    </header>
+    </navbar>
   );
 };
 

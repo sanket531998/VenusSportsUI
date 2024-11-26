@@ -1,13 +1,15 @@
 import "./App.css";
 import Header from "./components/Header/Header";
-import Carosuel from "./components/Carosuel/Carosuel";
-import arohi1 from "./assets/arohi1.jpg"; // Path relative to the component file
+import LandingPage from "./components/LandingPage/LandingPage";
+import Team from "./components/Team/Team";
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
-      <Carosuel></Carosuel>
+      <LandingPage></LandingPage>
+      <Team></Team>
+      {/* <Carosuel></Carosuel> */}
     </div>
   );
 }
