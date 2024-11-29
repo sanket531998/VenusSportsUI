@@ -1,4 +1,5 @@
 import "./App.css";
+import Gallery from "./components/Gallery/Gallery";
 import Header from "./components/Header/Header";
 import LandingPage from "./components/LandingPage/LandingPage";
 import Team from "./components/Team/Team";
@@ -8,8 +9,8 @@ function App() {
     <div className="App">
       <Header></Header>
       <LandingPage></LandingPage>
+      <Gallery></Gallery>
       <Team></Team>
-      {/* <Carosuel></Carosuel> */}
     </div>
   );
 }

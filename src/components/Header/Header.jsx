@@ -1,4 +1,3 @@
-import "./header.css";
 import venusLogo from "../../assets/venuslogo.png";
 
 const Header = () => {
@@ -24,15 +23,27 @@ const Header = () => {
           ></img>
         </div>
         <ul className="md:flex flex-row hidden">
-          <li className="px-3 font-semibold">Home</li>
-          <li className="px-3 font-semibold">Volleyball</li>
-          <li className="px-3 font-semibold">Summer Camp</li>
-          <li className="px-3 font-semibold">Gallery</li>
-          <li className="px-3 font-semibold">Team</li>
-          <li className="px-3 font-semibold">Contact us</li>
+          <li className="px-3 py-1 font-semibold hover:bg-slate-100 rounded-lg">
+            Home
+          </li>
+          <li className="px-3 py-1 font-semibold hover:bg-slate-100 rounded-lg">
+            Volleyball
+          </li>
+          <li className="px-3 py-1 font-semibold hover:bg-slate-100 rounded-lg">
+            Summer Camp
+          </li>
+          <li className="px-3 py-1 font-semibold hover:bg-slate-100 rounded-lg">
+            Gallery
+          </li>
+          <li className="px-3 py-1 font-semibold hover:bg-slate-100 rounded-lg">
+            Team
+          </li>
+          <li className="px-3 py-1 font-semibold hover:bg-slate-100 rounded-lg">
+            Contact us
+          </li>
         </ul>
         <div>
-          <p className="font-semibold text-lg md:block hidden bg-blue-300 px-4 py-1 rounded text-white">
+          <p className="md:block hidden bg-blue-500 hover:bg-blue-400 px-3 py-1 rounded-lg text-white shadow-md">
             Register
           </p>
         </div>
