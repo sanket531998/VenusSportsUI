@@ -1,7 +1,7 @@
 export default function TeamCard() {
   return (
     <div className="flex flex-col w-96 p-2 mb-4 rounded-xl shadow-lg bg-gray-100 px-4">
-      <span className="text-2xl font-semibold py-2">President</span>
+      <span className="text-2xl font-semibold py-2 text-center">President</span>
       <img
         src="https://images.pexels.com/photos/29501966/pexels-photo-29501966/free-photo-of-professional-portrait-of-young-adult-in-suit.jpeg?auto=compress&cs=tinysrgb&w=600"
         alt="ceo"
